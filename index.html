@@ -1,0 +1,159 @@
+<!--
+ * 愿望清单 Page
+ * 日期：2022.1.14
+ * 由于技能等级不够，只能扒了别人的改到这了，哈哈哈，勉强挂挂吧。本站随便扒。
+ *我是阿宅
+ *http://zws.fun/
+-->
+<!DOCTYPE html>
+<html><head>
+<meta charset="UTF-8" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="theme-color" content="#ff557d">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1, maximum-scale=1, user-scalable=no" />
+<title>愿望清单</title>
+<link rel="shortcut icon" href="./favicon.ico" /> 
+<link href="./asset/css/xiang.ai.css" rel="stylesheet">
+<script src="./asset/js/jquery.js"></script>
+<script src="./asset/js/common.js"></script>
+<script type="text/javascript">
+function UploadCallback(ret,id,imgurl) {
+	$(function(){
+		console.log(imgurl)
+		var formid = '#event-form-'+id;
+		var $form = $(formid);
+		var $img = $form.find('.img');
+		var timestamp = Date.parse(new Date());
+		var cssImg = 'background-image:url(/'+imgurl+'?'+timestamp+');'
+		$img.attr('style',cssImg).find('input').val(imgurl);
+	})
+	return;
+}
+</script>
+<style>
+img {
+	width: 160px;
+		height: 160px;
+		margin: -40px auto 0;
+		padding: 2px; 
+    	border-radius: 50%; 
+    	background-image: -webkit-linear-gradient(top, red 0%, blue 30%, yellow 60%, green 90%);
+    	overflow: hidden;
+   }
+</style>
+</head>
+<body>	<div class="header">
+	    <h1 class="logo" role="text"><a href="/" title="lovelist" role="link"><span class="ico"><span class='ie8-hide'>恋爱</span></span><span class="txt">清单</span></a></h1>
+	<p class="lover-info">
+	    		<span class="lover-image">
+	<div class="qqimg" id="a" onclick="a();" title="点击头像有惊喜！">
+		<img src="http://q1.qlogo.cn/g?b=qq&nk=240233869&s=640" alt="Paris">
+	</div>
+	<h1><center><font color=#E80017>2</font><font color=#D1002E>0</font><font color=#BA0045>2</font><font color=#A3005C>3</font><font
+            color=#8C0073>年</font><font color=#75008A>-</font>
+<font color=#3000CF>倒</font><font color=#1900E6>计</font><font color=#0200FD>时</font>
+    </center></h1>
+    <center>
+        <div id="CountMsg" class="HotDate">
+            <span id="t_d">0 天</span>
+            <span id="t_h">0 时</span>
+            <span id="t_m">0 分</span>
+            <span id="t_s">0 秒</span>
+        </div>
+    </center>
+    <script type="text/javascript"> function getRTime() {
+        var EndTime = new Date('2023/01/01 00:00:00');
+        var NowTime = new Date();
+        var t = EndTime.getTime() - NowTime.getTime();
+        var d = Math.floor(t / 1000 / 60 / 60 / 24);
+        var h = Math.floor(t / 1000 / 60 / 60 % 24);
+        var m = Math.floor(t / 1000 / 60 % 60);
+        var s = Math.floor(t / 1000 % 60);
+        document.getElementById("t_d").innerHTML = d + " 天";
+        document.getElementById("t_h").innerHTML = h + " 时";
+        document.getElementById("t_m").innerHTML = m + " 分";
+        document.getElementById("t_s").innerHTML = s + " 秒";
+    }
+    setInterval(getRTime, 1000);
+    </script>
+   
+<div class="copyright">感情总是不尽人意，生活总是颠沛流离〔<a href="./gwly.html" title="给我留言">给我留言</a>〕</div>
+		<div class="event-list ">
+			<div class='event doing'><span class='event-order' role='text'><span class='order-txt'>第</span><span class='order-num'>1</span><span class='order-txt'>件事</span></span><span class='event-state'><span class='txt'></span></span><h2 class='event-title'>清理债务</h2><div class='event-detail'><p class='event-image'><span class='img' style='background-image:url(./asset/images/event/1.jpg);'></span></p><p class='event-remark'>事件完成的时间、地点以及心情描述。</p></div></div>
+<div class='event doing'><span class='event-order' role='text'><span class='order-txt'>第</span><span class='order-num'>2</span><span class='order-txt'>件事</span></span><span class='event-state'><span class='txt'></span></span><h2 class='event-title'>开一家店</h2><div class='event-detail'><p class='event-image'><span class='img' style='background-image:url(./asset/images/event/2.jpg);'></span></p><p class='event-remark'>事件完成的时间、地点以及心情描述。</p></div></div>
+<div class='event doing'><span class='event-order' role='text'><span class='order-txt'>第</span><span class='order-num'>3</span><span class='order-txt'>件事</span></span><span class='event-state'><span class='txt'></span></span><h2 class='event-title'>找女朋友</h2><div class='event-detail'><p class='event-image'><span class='img' style='background-image:url(./asset/images/event/3.jpg);'></span></p><p class='event-remark'>事件完成的时间、地点以及心情描述。</p></div></div>
+<div class='event doing'><span class='event-order' role='text'><span class='order-txt'>第</span><span class='order-num'>4</span><span class='order-txt'>件事</span></span><span class='event-state'><span class='txt'></span></span><h2 class='event-title'>考驾照</h2><div class='event-detail'><p class='event-image'><span class='img' style='background-image:url(./asset/images/event/4.jpg);'></span></p><p class='event-remark'>事件完成的时间、地点以及心情描述。</p></div></div>
+<div class='event doing'><span class='event-order' role='text'><span class='order-txt'>第</span><span class='order-num'>5</span><span class='order-txt'>件事</span></span><span class='event-state'><span class='txt'></span></span><h2 class='event-title'>买车买房</h2><div class='event-detail'><p class='event-image'><span class='img' style='background-image:url(./asset/images/event/5.jpg);'></span></p><p class='event-remark'>事件完成的时间、地点以及心情描述。</p></div></div>
+<div class='event doing'><span class='event-order' role='text'><span class='order-txt'>第</span><span class='order-num'>6</span><span class='order-txt'>件事</span></span><span class='event-state'><span class='txt'></span></span><h2 class='event-title'>减肥120斤</h2><div class='event-detail'><p class='event-image'><span class='img' style='background-image:url(./asset/images/event/6.jpg);'></span></p><p class='event-remark'>事件完成的时间、地点以及心情描述。</p></div></div>
+<div class='event doing'><span class='event-order' role='text'><span class='order-txt'>第</span><span class='order-num'>7</span><span class='order-txt'>件事</span></span><span class='event-state'><span class='txt'></span></span><h2 class='event-title'>去旅游</h2><div class='event-detail'><p class='event-image'><span class='img' style='background-image:url(./asset/images/event/7.jpg);'></span></p><p class='event-remark'>事件完成的时间、地点以及心情描述。</p></div></div>
+<div class='event done'><span class='event-order' role='text'><span class='order-txt'>第</span><span class='order-num'>8</span><span class='order-txt'>件事</span></span><span class='event-state'><span class='txt'></span></span><h2 class='event-title'>每年和朋友最少聚餐一次</h2><div class='event-detail'><p class='event-image'><span class='img' style='background-image:url(./asset/images/event/8.jpg);'></span></p><p class='event-remark'><p>2021年4月前和朋友聚餐一次</p>2022年12月31号和朋友聚餐一次</p></div></div>
+<div class='event doing'><span class='event-order' role='text'><span class='order-txt'>第</span><span class='order-num'>9</span><span class='order-txt'>件事</span></span><span class='event-state'><span class='txt'></span></span><h2 class='event-title'>让自己做个温暖的人</h2><div class='event-detail'><p class='event-image'><span class='img' style='background-image:url(./asset/images/event/10.jpg);'></span></p><p class='event-remark'>事件完成的时间、地点以及心情描述。</p></div></div>
+<div class='event doing'><span class='event-order' role='text'><span class='order-txt'>第</span><span class='order-num'>10</span><span class='order-txt'>件事</span></span><span class='event-state'><span class='txt'></span></span><h2 class='event-title'>戒撸</h2><div class='event-detail'><p class='event-image'><span class='img' style='background-image:url(./asset/images/event/9.jpg);'></span></p><p class='event-remark'>事件完成的时间、地点以及心情描述。</p></div></div>
+		<!--doing=不打勾 done=完成打勾-->
+	
+	<div class="footer">
+	<address class="copyright">
+		<p>
+〔<a href="./gonggao/index.html" title="不知道能坚持多久，可以的话赞助一下呗">小小赞助-支持一下</a>〕</p>
+	<p>
+〔<a href="./zwjs.html" title="自我介绍">新疆</a>〕&copy;版权所有
+</p>
+	<span>
+   本站已运行
+</span>
+<span id="span_dt_dt">
+</span>
+<script>
+    /*建站时间*/
+    function show_date_time() {
+        window.setTimeout("show_date_time()", 1e3);
+        var BirthDay = new Date("2022/01/01"),
+        today = new Date,
+        timeold = today.getTime() - BirthDay.getTime(),
+        msPerDay = 864e5,
+        e_daysold = timeold / msPerDay,
+        daysold = Math.floor(e_daysold),
+        e_hrsold = 24 * (e_daysold - daysold),
+        hrsold = Math.floor(e_hrsold),
+        e_minsold = 60 * (e_hrsold - hrsold),
+        minsold = Math.floor(60 * (e_hrsold - hrsold)),
+        seconds = Math.floor(60 * (e_minsold - minsold));
+        span_dt_dt.innerHTML = daysold + "天" + hrsold + "小时" + minsold + "分" + seconds + "秒";
+    }
+    show_date_time();
+</script>
+
+</address>
+</div>
+<script>
+document.addEventListener('visibilitychange', function () {
+if (document.visibilityState == 'hidden') {
+normal_title = document.title;
+document.title = '亲爱的，别走，快回来';
+} else document.title = normal_title;
+});
+</script>
+<!--音乐响起来！！-->
+<audio autoplay="false" loop="false" id="music">
+<source src="./gonggao/music.mp3" type="audio/mpeg">
+</audio>
+<script>   
+   function a(){
+     var audio = document.getElementById('music'); 
+     if(audio.paused){                 
+         audio.play();//audio.play();// 播放  
+     }
+     else{
+          audio.pause();// 暂停
+     } 
+   }
+</script>
+</body>
+</html>
+<!--
+ * 愿望清单 Page
+ * 日期：2022.1.14
+ * 由于技能等级不够，只能扒了别人的改到这了，哈哈哈，勉强挂挂吧。本站随便扒。
+ *我是阿宅
+ *http://zws.fun/
+-->
