@@ -90,7 +90,7 @@ button {white-space:nowrap;overflow:visible;}
 
 .event-list {}
 .event {padding:12px 0;font-size:16px;border-top:1px solid #e5e5e5;position: relative;#zoom:1;}
-.event .event-order {position: absolute;right:0; top: 0;bottom: 0;font-size: 48px;color:#ddd;overflow: hidden;text-align: right;}
+.event .event-order {position: absolute;right:0; top: 0;bottom: 0;font-size: 40px;color:#ddd;overflow: hidden;text-align: right;}
 .event .event-order .order-txt {display: none;}
 .event:hover .event-order {color:#63676f;}
 .event .event-state,
@@ -154,7 +154,7 @@ button {white-space:nowrap;overflow:visible;}
 .event.show + .event::after {display: none;}
 .event.show .event-order {position: static;display: inline-block;vertical-align: middle;text-align:left;color:inherit;font-size: 16px;}
 .event.show .event-order .order-txt {display:inline;}
-.event.show .event-title {font-size: 36px;font-weight: 700;display: block;}
+.event.show .event-title {font-size: 26px;font-weight: 700;display: block;}
 .event.show .event-state {overflow: auto;width:auto;height:auto;margin:0;background: none!important;color:inherit;}
 .event.show .flex-input {margin:10px 0;}
 .event.show .flex-input-inner {padding-right: 22px;}
@@ -300,7 +300,7 @@ button {white-space:nowrap;overflow:visible;}
 }
 
 .footer {padding:10px 0 40px;border-top:1px solid #e6e6e6;}
-.copyright {color:#999;font-size: 12px;}
+.copyright {margin: 0 auto; text-align: center;color:#999;font-size: 19px;}
 /* ielt8 inline-block */
 .ielt8 .logo,
 .ielt8 .about,
@@ -387,3 +387,6 @@ button {white-space:nowrap;overflow:visible;}
 		}
 	}
 	
+.juzhon {
+margin: 0 auto; text-align: center;font-size: 19px;
+}
