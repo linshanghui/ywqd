@@ -1,0 +1,79 @@
+@font-face {
+	font-family: "iconfont";
+	/* Project id 3162748 */
+	src: url('//at.alicdn.com/t/font_3162748_5wdo2svwumb.woff2?t=1643178314828') format('woff2'),
+		url('//at.alicdn.com/t/font_3162748_5wdo2svwumb.woff?t=1643178314828') format('woff'),
+		url('//at.alicdn.com/t/font_3162748_5wdo2svwumb.ttf?t=1643178314828') format('truetype');
+}
+
+.iconfont {
+	font-family: "iconfont" !important;
+	font-size: 16px;
+	font-style: normal;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-yinle:before {
+	content: "\e600";
+}
+
+.music {
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	border: 1.5px solid #eee;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	border-radius: 50%;
+	transition: 0.2s;
+	background-color: rgb(0,0,0,0.4);
+	box-shadow: 0 0 3px #000;
+	moz-user-select: -moz-none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color:rgba(255,0,0,0);
+}
+
+.music:active {
+	background-color: rgb(0,0,0,0.5);
+	border-color: #fff;
+}
+
+.music:hover {
+    cursor: pointer;
+}
+
+.dh-xz {
+	animation: music 3s linear infinite;
+	/* linear // 意思就是匀速的运动   infinite// 就是无限循环的意思 */
+}
+
+@keyframes music {
+	0% {
+		transform: rotate(0deg)
+	}
+
+	100% {
+		transform: rotate(360deg)
+	}
+}
+
+.music>i {
+	font-size: 24px;
+	line-height: 40px !important;
+	color: #fff !important;
+}
+
+@media screen and (min-width: 1200px) {
+    .music:hover {
+        background-color: rgb(0,0,0,0.5);
+	    border-color: #fff;
+    }
+}
